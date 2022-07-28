@@ -2,8 +2,7 @@
 import React from 'react'; //imports react that does the DOM manipulation for us
 import ReactDOM from 'react-dom/client'; //connects react 
 import './index.css'; //this stylesheet will only work with this index.js, if you import the css, it will apply
-// import App from './App';
-import Hello from './Hello' //the name standard for react components is capitilizing first letter
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons'; //import here, but i'm using at Hello.js
 
@@ -13,8 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <h1>Hello World</h1> */}
-    {/* <App /> */}
-    <Hello greeting={'Hello' + 'React Ninja'}/>
+    <App />
   </React.StrictMode>
 );
 
