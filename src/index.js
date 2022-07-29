@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom/client'; //connects react
 import './index.css'; //this stylesheet will only work with this index.js, if you import the css, it will apply
 // import Card from './Card';
 import CardList from './CardList';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons'; //import here, but i'm using at Hello.js
-import {robots} from './robots';
 
 //this is selecting the DOM object named 'root' and storing into a root const
 //createRoot is a ReactDom method
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <App />
     
-    <CardList robots={robots}/>
 
 
     {/* <h1>Hello World</h1> */}
