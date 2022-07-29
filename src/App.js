@@ -4,9 +4,6 @@ import { robots } from './robots';
 import SearchBox from './SearchBox';
 import './App.css';
 
-// In order to comunicate two diferent elements, we need to introduce the state concept,
-// to do this, we will use classes instead of consts
-// const App = () => {
 class App extends Component {
     constructor() {
         super()
@@ -16,9 +13,9 @@ class App extends Component {
 
         }
     }
-    
+
     onSearchChange = (event) => {
-        this.setState({searchfield: event.target.value})
+        this.setState({ searchfield: event.target.value })
     }
 
 
