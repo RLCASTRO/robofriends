@@ -2,7 +2,8 @@
 import React from 'react'; //imports react that does the DOM manipulation for us
 import ReactDOM from 'react-dom/client'; //connects react 
 import './index.css'; //this stylesheet will only work with this index.js, if you import the css, it will apply
-import Card from './Card';
+// import Card from './Card';
+import CardList from './CardList';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons'; //import here, but i'm using at Hello.js
 import {robots} from './robots';
@@ -12,18 +13,22 @@ import {robots} from './robots';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
+    <CardList robots={robots}/>
+
+
     {/* <h1>Hello World</h1> */}
       {/* Embracing the elements into a single div element is not needed anymore */}
       {/* <div> */} 
-      <>
+      {/* this section was transformed into its own component */}
+      {/* <>
         <Card id={robots[0].id} name={robots[0].name} email={robots[0].email} />
         <Card id={robots[1].id} name={robots[1].name} email={robots[1].email} />
         <Card id={robots[2].id} name={robots[2].name} email={robots[2].email} />
         <Card id={robots[3].id} name={robots[3].name} email={robots[3].email} />
         <Card id={robots[4].id} name={robots[4].name} email={robots[4].email} />
+      </> */}
       {/* </div> */}
-      
-      </>
   </React.StrictMode>
 );
 
