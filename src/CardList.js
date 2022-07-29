@@ -3,15 +3,23 @@ import Card from './Card';
 
 const CardList = ({ robots }) => {
 
-    // this will create an array of objects and store it into a variable
-    const cardArray = robots.map((user, i) => {
-        // Here I made it intecactive, so if my robots list goes bigger, will automatically add to the page
-        return <Card id={robots[i].id} name={robots[i].name} email={robots[i].email} />
-    })
-
     return (
         <>
-            {cardArray}
+            {
+
+                // this will create an array of objects and store it into a variable
+               robots.map((user, i) => {
+                    // Here I made it intecactive, so if my robots list goes bigger, will automatically add to the page
+                    return ( <Card
+                            // Key is a props unique identifier for each cardArray element
+                            key={robots[i].id}
+                            id={robots[i].id}
+                            name={robots[i].name}
+                            email={robots[i].email}
+                        />
+                        );
+                })
+            }
 
             {/* First I hard coded the robots */}
             {/* <Card id={robots[1].id} name={robots[1].name} email={robots[1].email} />
