@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CardList from './CardList';
 import { robots } from './robots';
 import SearchBox from './SearchBox';
+import './App.css';
 
 // In order to comunicate two diferent elements, we need to introduce the state concept,
 // to do this, we will use classes instead of consts
@@ -28,7 +29,7 @@ class App extends Component {
         return (
             // <>
             <div className='tc'>
-                <h1>RoboFriends</h1>
+                <h1 className='f1'>RoboFriends</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <CardList robots={filteredRobots} />
             </div>

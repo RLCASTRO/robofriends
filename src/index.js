@@ -3,7 +3,7 @@ import React from 'react'; //imports react that does the DOM manipulation for us
 import ReactDOM from 'react-dom/client'; //connects react 
 import './index.css'; //this stylesheet will only work with this index.js, if you import the css, it will apply
 // import Card from './Card';
-import CardList from './CardList';
+// import CardList from './CardList';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons'; //import here, but i'm using at Hello.js
