@@ -6,7 +6,7 @@ const Scroll = (props) => {
             position: '',
             top:1,
             overflow: 'scroll',
-            border: '2px solid black',
+            // border: '2px solid black',
             height: '900px',
             
 
