@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch('http://jsonplaceholder.typicode.com/users/')
+        fetch('https://jsonplaceholder.typicode.com/users/')
             .then(response => response.json())
             .then(users => this.setState({ robots: users }))
         // this.setState({ robots: robots })
@@ -31,7 +31,8 @@ class App extends Component {
         })
         if (this.state.robots.length === 0) {
             return <h1 className='tc'>Loading</h1>
-        } else {
+        }
+        else {
             return (
                 // <>
                 <div className='tc'>
